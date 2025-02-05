@@ -8,7 +8,7 @@ const createI18nContent = (t) => {
             return `${this.firstName} ${this.lastName}`;
         },
         role:      t("person.role"),
-        avatar:    '/images/avatar.jpg',
+        avatar:    '/images/AI_avatar.jpg',
         location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
         languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
     }
@@ -35,7 +35,7 @@ const createI18nContent = (t) => {
         {
             name: 'X',
             icon: 'x',
-            link: 'https://x.com/EasycodesDev',
+            link: 'https://x.com/yash_k_saini',
         },
         {
             name: 'Email',

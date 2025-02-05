@@ -7,7 +7,7 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Open Source Developer', // Change this to your role
-    avatar:    '/images/avatar.jpg',
+    avatar:    '/images/AI_avatar.jpg',
     location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
@@ -34,7 +34,7 @@ const social = [
     {
         name: 'X',
         icon: 'x',
-        link: 'https://x.com/EasycodesDev',
+        link: 'https://x.com/yash_k_saini',
     },
     {
         name: 'Email',
