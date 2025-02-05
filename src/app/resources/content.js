@@ -9,7 +9,7 @@ const person = {
     role:      'Open Source Developer', // Change this to your role
     avatar:    '/images/AI_avatar.jpg',
     location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'हिन्दी']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
