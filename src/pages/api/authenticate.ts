@@ -5,7 +5,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const { password } = req.body;
         const correctPassword = 'password';
-
+        // Have to update password value for custom correct password
         if (password === correctPassword) {
             res.setHeader(
                 'Set-Cookie',
