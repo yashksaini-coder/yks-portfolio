@@ -77,7 +77,7 @@ const createI18nContent = (t) => {
             title: t("about.work.title"),
             experiences: [
                 {
-                    company: 'FLY',
+                    company: 'DEVRhylme Foundation',
                     timeframe: t("about.work.experiences.FLY.timeframe"),
                     role: t("about.work.experiences.FLY.role"),
                     achievements: t("about.work.experiences.FLY.achievements").split(";"),

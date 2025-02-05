@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software Developer and Writer</>,
+    subline: <>I'm Yash Kumar Saini, an Software Developer at <InlineCode>DEV Rhylme</InlineCode>, where I build features, solve issues, user experiences.<br/> In my free-time, I work & build my own projects.</>
 }
 
 const about = {
@@ -69,23 +69,23 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Yash is a India-based Open Source Developer, who is super into Open Source stuff, Data Science, AI/ML and Developing & Contributing to different Open Source Projects and Organizations. He has established himself in the Top 2% of GitHub by contributing to 110+ projects with 350+ Pull Requests, participating & engaging with different communities, and earning a lot of reputation.</>
+        description: <>I'm an Open Source Developer based out of India, super into Open Source, Data Science, AI/ML. Developing & Contributing to different Open Source Projects and Organizations.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'DEVRhylme Foundation',
+                timeframe: '2025 - Present',
+                role: 'Software Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Working on the main Organization's website, creating Event edit card feature, and Auth0</>,
+                    <>Maintaining and collaborating on different projects of the organization</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
+                        src: '/images/projects/project-01/devrhylme.png',
                         alt: 'Once UI Project',
                         width: 16,
                         height: 9
@@ -93,12 +93,12 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Amateurs League',
+                timeframe: '2024',
+                role: 'Lead Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Developed a python library from the scratch which was designed designed to 🕵️‍♂️ stealthily integrate files within a machine, ensuring 🛡️ discreet and seamless file operations without detection</>,
+                    <>Integrated <InlineCode>MKdocs</InlineCode> for easy to setup & maintain documentation. Using general Markdown with CI/CD pipeline automations</>
                 ],
                 images: [ ]
             }
@@ -109,12 +109,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Deenbandhu Chhotu Ram University Of Science And Technology',
+                description: <>Completed 3-year Bachelor's course.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'UpGrad',
+                description: <>Studied Data Science & Analytics.</>,
             }
         ]
     },
@@ -123,18 +123,18 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'Python',
+                description: <>Able to build web applications using <strong>Streamlit</strong> & <strong>Flask</strong></>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/projects/project-01/cover-02.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                     {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/projects/project-01/cover-03.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
