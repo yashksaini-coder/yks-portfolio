@@ -7,7 +7,7 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Open Source Developer', // Change this to your role
-    avatar:    '/images/AI_avatar.jpg',
+    avatar:    '/images/avatar.jpg',
     location:  'Asia/Kolkata',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'हिन्दी']  // optional: Leave the array empty if you don't want to display languages
 }
@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Software Developer and Writer</>,
-    subline: <>I'm Yash Kumar Saini, an Software Developer at <InlineCode>DEV Rhylme</InlineCode>, where I build features, solve issues, user experiences.<br/> In my free-time, I work & build my own projects.</>
+    subline: <>Software Developer at <InlineCode>DEV Rhylme</InlineCode><br/> In my free-time, I work & build my own projects.</>
 }
 
 const about = {
