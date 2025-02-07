@@ -1,76 +1,109 @@
-const baseURL = 'demo.magic-portfolio.com'
-
-// Enable localization
-const i18n = false;
-
-// Manage localized content in the messages folder
-const i18nOptions = {
-    locales: ['en'],            // A list of all locales that are supported, e.g. ['en','id']
-    defaultLocale: 'en'         // Locale used by default and as a fallback
-}
+const baseURL = "demo.magic-portfolio.com";
 
 const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    // '/blog':    true,
-    '/gallery': true,
-}
+  "/": true,
+  "/about": true,
+  "/work": true,
+  "/blog": true,
+  "/gallery": true,
+};
 
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-    '/work/Once-ui-portfolio-2025': true
-}
-
-const effects = {
-    mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
-    gradient: {
-        display: true,
-        opacity: 0.7            // 0 - 1
-    },
-    dots: {
-        display: true,
-        opacity: 0.7,           // 0 - 1
-        size: '24'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
-    },
-    lines: {
-        display: true,
-    },
-}
+  
+};
 
 const style = {
-    theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
-    brand:       'indigo',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'blue',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'color',     // color | contrast
-    solidStyle:  'flat',         // flat | plastic
-    border:      'rounded',      // rounded | playful | conservative
-    surface:     'translucent',  // filled | translucent
-    transition:  'all'           // all | micro | macro
-}
+  theme: "dark", // dark | light
+  neutral: "gray", // sand | gray | slate
+  brand: "indigo", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "violet", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  solid: "contrast", // color | contrast
+  solidStyle: "flat", // flat | plastic
+  border: "playful", // rounded | playful | conservative
+  surface: "translucent", // filled | translucent
+  transition: "all", // all | micro | macro
+};
+
+const effects = {
+  mask: {
+    cursor: true,
+    x: 0,
+    y: 0,
+    radius: 75,
+  },
+  gradient: {
+    display: true,
+    x: 50,
+    y: 0,
+    width: 100,
+    height: 100,
+    tilt: 0,
+    colorStart: "brand-background-strong",
+    colorEnd: "static-transparent",
+    opacity: 50,
+  },
+  dots: {
+    display: true,
+    size: 2,
+    color: "brand-on-background-weak",
+    opacity: 20,
+  },
+  lines: {
+    display: false,
+    color: "neutral-alpha-weak",
+    opacity: 100,
+  },
+  grid: {
+    display: false,
+    color: "neutral-alpha-weak",
+    opacity: 100,
+  },
+};
 
 const display = {
-    location: true,
-    time:     false
-}
+  location: true,
+  time: true,
+};
 
 const mailchimp = {
-    action: 'https://url/subscribe/post?parameters',
-    effects: {
-        mask: 'topRight',           // none | cursor | topLeft | topRight | bottomLeft | bottomRight
-        gradient: {
-            display: true,
-            opacity: 0.6            // 0 - 1
-        },
-        dots: {
-            display: false,
-        },
-        lines: {
-            display: true,
-        },
-    }
-}
+  action: "https://url/subscribe/post?parameters",
+  effects: {
+    mask: {
+      cursor: false,
+      x: 100,
+      y: 0,
+      radius: 100,
+    },
+    gradient: {
+      display: true,
+      x: 100,
+      y: 50,
+      width: 100,
+      height: 100,
+      tilt: -45,
+      colorStart: "accent-background-strong",
+      colorEnd: "static-transparent",
+      opacity: 100,
+    },
+    dots: {
+      display: false,
+      size: 24,
+      color: "brand-on-background-weak",
+      opacity: 100,
+    },
+    lines: {
+      display: true,
+      color: "neutral-alpha-weak",
+      opacity: 100,
+    },
+    grid: {
+      display: true,
+      color: "neutral-alpha-weak",
+      opacity: 100,
+    },
+  },
+};
 
-export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL, i18n, i18nOptions };
+export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL };
