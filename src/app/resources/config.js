@@ -20,18 +20,18 @@ const routes = {
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-    '/work/automate-design-handovers-with-a-figma-to-code-pipeline': false
+    '/work/Once-ui-portfolio-2025': true
 }
 
 const effects = {
     mask: 'cursor',             // none | cursor | topLeft | topRight | bottomLeft | bottomRight
     gradient: {
         display: true,
-        opacity: 0.4            // 0 - 1
+        opacity: 0.7            // 0 - 1
     },
     dots: {
         display: true,
-        opacity: 0.4,           // 0 - 1
+        opacity: 0.7,           // 0 - 1
         size: '24'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
     },
     lines: {
@@ -41,10 +41,10 @@ const effects = {
 
 const style = {
     theme:       'dark',         // dark | light
-    neutral:     'slate',         // sand | gray | slate
+    neutral:     'gray',         // sand | gray | slate
     brand:       'indigo',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     accent:      'blue',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'contrast',     // color | contrast
+    solid:       'color',     // color | contrast
     solidStyle:  'flat',         // flat | plastic
     border:      'rounded',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent
@@ -53,7 +53,7 @@ const style = {
 
 const display = {
     location: true,
-    time:     true
+    time:     false
 }
 
 const mailchimp = {
