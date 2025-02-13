@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import { title } from "process";
 
 const person = {
     firstName: 'Yash K.',
@@ -119,65 +120,25 @@ const about = {
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
                 title: 'Python',
-                description: <>Able to build web applications using <strong>Streamlit</strong> & <strong>Flask</strong></>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                description: <>Able to build web applications using <strong>Streamlit</strong> & <strong>Flask</strong></>
             },
             {
                 title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Shadcn + Supabase.</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-05.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                description: <>Building next gen apps with Next.js + Shadcn + Supabase.</>
             },
             {
                 title: 'React.js',
-                description: <>Building web applications using React.js + Node + Tailwind CSS</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-06.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-07.png',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            }
+                description: <>Building web applications using React.js + Node + Tailwind CSS</>
+            },
+            {
+                title: 'Tailwind CSS',
+                description: <>Building web applications using React.js + Node + Tailwind CSS</>
+            },
         ]
     }
 }
