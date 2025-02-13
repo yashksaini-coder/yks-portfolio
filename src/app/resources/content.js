@@ -163,7 +163,6 @@ const gallery = {
     label: 'Gallery',
     title: 'My AI photo gallery',
     description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
     images: [
         {
             src: '/images/gallery/img-01.jpg',
