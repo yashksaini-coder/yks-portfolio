@@ -1,4 +1,4 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "https://yashksaini.vercel.app/";
 
 const routes = {
   "/": true,
@@ -31,7 +31,7 @@ const effects = {
     cursor: true,
     x: 0,
     y: 0,
-    radius: 75,
+    radius: 55,
   },
   gradient: {
     display: true,

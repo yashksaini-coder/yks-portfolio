@@ -25,7 +25,7 @@ const Badge = forwardRef<HTMLDivElement | HTMLAnchorElement, BadgeProps>(
         className={effect ? styles.animation : undefined}
         vertical="center"
         radius="full"
-        background="neutral-weak"
+        background="brand-medium"
         border="brand-alpha-medium"
         shadow="l"
         {...rest}

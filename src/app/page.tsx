@@ -1,12 +1,13 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column } from "@/once-ui/components";
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column, LetterFx } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
 import { baseURL, routes } from "@/app/resources";
 import { home, about, person, newsletter } from "@/app/resources/content";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
+import { Badge } from "@/once-ui/components/Badge";
 
 export async function generateMetadata() {
   const title = home.title;
@@ -63,6 +64,13 @@ export default function Home() {
         }}
       />
       <Column fillWidth paddingY="l" gap="m">
+        <Badge
+          icon="FaGithub"
+          arrow
+          effect
+          href="https://github.com/yashksaini-coder"
+        >Connect with Me 
+        </Badge>
         <Column maxWidth="s">
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
             <Heading wrap="balance" variant="display-strong-l">
