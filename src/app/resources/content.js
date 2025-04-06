@@ -64,7 +64,7 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
@@ -86,8 +86,8 @@ const about = {
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/devrhylme.png',
-                        alt: 'Once UI Project',
+                        src: '/images/projects/devrhylme.png',
+                        alt: 'Internship project',
                         width: 16,
                         height: 9
                     }
