@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={`${WDLXLLubrifontTCRegular.className} antialiased`}
       >
-        <main className="max-w-4xl mx-auto px-10 py-4 min-h-screen selection:text-violet-700 selection:bg-violet-500/20">
+        <main className="mx-auto px-10 py-4 min-h-screen selection:text-violet-700 selection:bg-violet-500/20">
         <RootProviders>
           <Navbar />
           {children}
