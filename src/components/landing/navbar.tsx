@@ -3,11 +3,9 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
-import ThemeToggler from "@/components/theme/toggler";
 
 const links = [
-  { href: "/", text: "Home" },
-  { href: "/w", text: "Writings" },
+  { href: "/blog", text: "Blog" },
   { href: "/projects", text: "Projects" },
   { href: "/skills", text: "Skills" },
 ];
@@ -17,25 +15,28 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="w-full flex justify-center">
-      <nav className="flex max-w-5xl w-full px-4 py-6 text-sm text-muted-foreground items-center justify-between">
+    <div className="w-full flex justify-center text-lg">
+      <nav className="mt-2 flex max-w-4xl w-full px-4 py-6 items-center justify-between">
+        <Link href="/" className="group">
+          <span className="text-violet-700 font-bold hover:text-black hover:bg-violet-500 px-1">
+            YkS
+          </span>
+        </Link>
         <div className="flex items-center gap-6">
-          {links.map(({ href, text }) => (
-            <h4
-              className={`hover:text-violet-500 sm:text-sm text-xs duration-300 transition-colors ${
-                pathname === href ? "text-violet-500" : ""
-              }`}
+          {links.map(({ href, text }, index) => (
+            <Link 
+              href={href} 
               key={href}
+              className="group"
             >
-              <div className={`px-2 py-0.5 ${pathname === href ? 'border-2 border-violet-800 text-white' : 'hover:bg-violet-500/10'}`}>
-                <Link href={href} className="flex items-center gap-4 font-medium text-base">
-                  {text}
-                </Link>
-              </div>
-            </h4>
+              <span className={`group-hover:text-black group-hover:bg-accent ${
+                pathname === href ? "text-black bg-accent" : ""
+              }`}>
+                _{text.toLowerCase()}
+              </span>
+            </Link>
           ))}
         </div>
-        <ThemeToggler className="h-full border-dashed" />
       </nav>
     </div>
   );
