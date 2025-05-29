@@ -3,14 +3,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // Fixed import
 import { Home, ArrowLeft, RefreshCw } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function NotFound() {
-  const [countdown, setCountdown] = useState(10000);
+  const [countdown, setCountdown] = useState(10); // Reduced countdown time
   const [isRedirecting, setIsRedirecting] = useState(false);
   const router = useRouter();
+
   useEffect(() => {
     if (countdown > 0 && !isRedirecting) {
       const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
@@ -22,7 +23,7 @@ export default function NotFound() {
   }, [countdown, isRedirecting, router]);
 
   return (
-    <div className="flex flex-col mt-20 items-center min-h-screen bg-background px-4 text-center">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-background px-4 text-center">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -47,14 +48,14 @@ export default function NotFound() {
               rotate: [0, 10, -10, 10, 0],
             }}
             transition={{
-              repeat: Number.POSITIVE_INFINITY,
+              repeat: Infinity,
               repeatType: "mirror",
               duration: 5,
               ease: "easeInOut",
             }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <div className="text-9xl font-ClashDisplayBold text-indigo-500 select-none">
+            <div className="text-9xl font-bold text-indigo-500 select-none">
               404
             </div>
           </motion.div>
