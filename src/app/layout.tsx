@@ -13,8 +13,8 @@ const WDLXLLubrifontTCRegular = localFont({
 
 
 export const metadata: Metadata = {
-  title: "YkS",
-  description: "YkS",
+  title: "Yash K. Saini",
+  description: "Yash K. Saini's Portfolio",
 };
 
 export default function RootLayout({

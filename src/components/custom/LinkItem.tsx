@@ -2,20 +2,22 @@ import type { LucideProps } from "lucide-react";
 
 export function LinkItem({
   icon: Icon,
+  size = 6, // Default size is 6, but it can be overridden if needed
   content,
   href,
 }: {
   icon?: React.ComponentType<LucideProps>;
+  size?: number;
   content: React.ReactNode;
   href?: string;
 }) {
   return (
-    <div className="flex items-center gap-4 font-mono text-md">
+    <p className="flex flex-row items-center gap-4 font-mono text-md">
       <span
-        className="flex size-6 shrink-0 items-center justify-center rounded-lg"
+        className={`flex size-${size} shrink-0 items-center justify-center rounded-lg`}
         aria-hidden="true"
       >
-        {Icon ? <Icon className="pointer-events-none size-6 text-muted-foreground" /> : ""}
+        {Icon ? <Icon className={`pointer-events-none size-${size} text-muted-foreground`} /> : ""}
       </span>
 
       <p className="text-balance">
@@ -32,6 +34,6 @@ export function LinkItem({
           content
         )}
       </p>
-    </div>
+    </p>
   );
 }
