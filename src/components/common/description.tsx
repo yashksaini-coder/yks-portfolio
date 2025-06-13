@@ -2,10 +2,14 @@ import React from "react";
 
 export default function Description({
   children,
+  className,
 }: {
   children: React.ReactNode;
+  className?: string;
 }) {
   return (
-    <p className="text-slate-200 md:text-[20px] text-sm">{children}</p>
+    <p className={className}>
+      {children}
+    </p>
   );
 }

@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React from "react";
-import { ChevronRight, Terminal } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 const links = [
   { href: "/blog", text: "Blog" },
   { href: "/projects", text: "Projects" },
@@ -12,7 +12,7 @@ const links = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <div className="w-full flex justify-center text-xl font-medium">
@@ -38,7 +38,7 @@ export default function Navbar() {
           {links.map(({ href, text }, index) => (
             <Link 
               href={href} 
-              key={href}
+              key={index}
               className="group"
             >
               <span className={`group-hover:text-violet-500  px-1 h-6 flex items-center gap-1 ${

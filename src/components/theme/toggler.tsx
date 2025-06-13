@@ -43,10 +43,10 @@ export default function ThemeToggler({ className }: ThemeTogglerProps) {
   };
 
   const toggleTheme = () => {
-    //@ts-ignore
+    // Check if View Transitions API is supported
     if (!document.startViewTransition) switchTheme();
-
-    //@ts-ignore
+ 
+    // next-themes does not have startViewTransition type
     document.startViewTransition(switchTheme);
   };
 

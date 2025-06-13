@@ -3,7 +3,7 @@ import type { LucideProps } from "lucide-react";
 import type { ReactElement } from "react";
 import type { SocialLink } from "@/types/social-links";
 import { cn } from "@/lib/utils";
-import { Icon } from "lucide-react";
+// import { Icon } from "lucide-react";
 export function SocialLinkItem({ icon: Icon, title, description, href }: SocialLink & { icon: React.ComponentType<LucideProps>,  }): ReactElement {
   return (
     <div className="relative">

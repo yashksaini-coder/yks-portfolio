@@ -1,11 +1,7 @@
 import React from "react";
 import { HyperText } from "@/components/magicui/hyper-text";
-import Image from "next/image";
 import Description from "./common/description";
 import CustomATag from "./CustomATag";
-import LinkedIn from "./SVG/LinkedIn";
-import GitHub from "./SVG/Github";
-import { LinkItem } from "./custom/LinkItem";
 
 export function Preview() {
   return (
@@ -17,11 +13,12 @@ export function Preview() {
         </h2>
       </div>
       <div className="my-4">
-        <Description>
-          Hi, I'm Yash K. Saini a software developer who loves Open Source Contribution. Really passionate about coding, building AI applications, low-level programming stuff too. I have a background in Data Science and believe in the power of collaboration. Check out my work on{" "}
+        <Description className="text-slate-200 md:text-[20px] text-sm align-middle">
+          Hi, I'm Yash K. Saini a software developer who loves Open Source Contribution. Really passionate about coding, building AI applications, low-level programming stuff too.&nbsp;I enjoy working with{" "} 
+          I have a background in Data Science and believe in the power of collaboration. Check out my work on{" "}
           <CustomATag href="https://github.com/yashksaini/CrossPostHub">
             CrossPostHub
-          </CustomATag>{" "}
+          </CustomATag>&#39;
           <CustomATag href="https://dev.to/yashksaini">Dev.to</CustomATag>{" "}
         </Description>
       </div>
