@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from 'next/font/local'
 
 import "./globals.css";
-import Navbar from "@/components/landing/navbar";
+import Navbar from "@/components/common/navbar";
 import RootProviders from "@/components/provider/theme";
 
 const WDLXLLubrifontTCRegular = localFont({

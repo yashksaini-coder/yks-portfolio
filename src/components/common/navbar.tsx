@@ -18,7 +18,7 @@ export default function Navbar() {
     <div className="w-full flex justify-center text-xl font-medium">
       <nav className="mt-2 flex max-w-4xl w-full px-4 py-6 items-center justify-between">
         <Link href="/" className="group">
-          <span className="text-violet-700 px-1 flex items-center gap-1">
+          <span className="text-purple-700 px-1 flex items-center gap-1">
             <ChevronRight className="h-6 w-6" />
             <span>YkS</span>
             <span className="ml-1 h-4.5 w-2 animate-blink bg-violet-800 inline-block" />
@@ -41,8 +41,8 @@ export default function Navbar() {
               key={href}
               className="group"
             >
-              <span className={`group-hover:text-violet-500 group-hover:bg-violet-500/20 px-1 h-6 flex items-center gap-1 ${
-                pathname === href ? "text-violet-500 bg-violet-500/20" : ""
+              <span className={`group-hover:text-violet-500  px-1 h-6 flex items-center gap-1 ${
+                pathname === href ? "text-violet-500" : ""
               }`}>
                 _{text.toLowerCase()}
               </span>
