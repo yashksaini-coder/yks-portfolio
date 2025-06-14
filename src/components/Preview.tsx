@@ -20,8 +20,9 @@ export function Preview() {
       <div className="my-4">
         <Description className="text-slate-300 md:text-[23px] text-sm font-normal text-justify">
           Hi, I'm a software developer who loves <CustomText icon={Github} href="https://github.com/yashksaini-coder" size={4} content="Open Source"/>
-          Taught myself code. Really passionate about coding, building AI applications, low-level programming stuff too.{` `}
-          I enjoy working with{" "} <CustomText href="#" content="React" /> and <CustomText icon={Github} href="#" content="TypeScript"/>.
+          Taught myself code. Really passionate about coding, building AI applications, Web3, Cloud, low-level programming stuff too.{` `}
+          I enjoy working with{" "} <CustomText href="#" content="React" /> and <CustomText href="https://www.typescriptlang.org/" content="TypeScript"/>,
+          and I have been exploring{" "} <span className="text-orange-600 hover:underline cursor-pointer">Rust</span>
         </Description>
       </div>
     </div>

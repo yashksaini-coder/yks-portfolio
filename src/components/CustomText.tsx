@@ -14,7 +14,7 @@ export default function CustomText({ href, children, icon: Icon, size = 6, conte
     <a
       href={href}
       target="_blank"
-      className="text-purple-100/30 leading-none transition-colors hover:underline hover:text-purple-600 hover:border-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 inline-flex items-center gap-2"
+      className="text-purple-100/30 leading-none transition-colors hover:underline hover:text-purple-600 hover:border-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 inline-flex items-center gap-2 mr-1"
       rel="noopener noreferrer"
       title={typeof children === "string" ? children : undefined}
       aria-label={typeof children === "string" ? children : undefined}
