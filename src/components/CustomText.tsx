@@ -3,7 +3,7 @@ import type { LucideProps } from "lucide-react";
 
 interface Props {
   href: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   icon?: React.ComponentType<LucideProps>;
   size?: number;
   content?: string;
