@@ -1,12 +1,25 @@
+import { Contributions } from "@/components/Contribution";
+import GithubCalender from "@/components/GitHubCalendar";
 import { Preview } from "@/components/Preview";
-import SocialLinks from "@/components/social-links/index";
-import Separator from "@/components/common/Seperator";
+import { Separator } from "@/components/common/Seperator";
+import Navbar from "@/components/common/navbar";
+
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto md:px-10 px4 py-6">
+    <div>
+      <Navbar />  
       <Preview />
-      <Separator />
+      <Separator
+        className="data-[orientation=horizontal]:h-1 mb-4 data-[orientation=vertical]:w-10"
+        decorative={true}
+       />
+       <GithubCalender />
+       <Separator
+        className="data-[orientation=horizontal]:h-1 mb-4 data-[orientation=vertical]:w-10"
+        decorative={true}
+       />
+       <Contributions />
     </div>
   );
 }

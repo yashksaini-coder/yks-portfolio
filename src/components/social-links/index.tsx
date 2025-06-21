@@ -1,5 +1,5 @@
 "use client";
-
+import {user} from "@/data/user";
 import { useRef } from "react";
 import {
   Mail,
@@ -56,29 +56,29 @@ export default function SocialLinks() {
   return (
     <div className="flex flex-row gap-3">
       <a
-        href="https://www.x.com/yash_k_saini"
+        href={user.twitter}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
       text-white transition duration-300 ease-in-out
-       hover:bg-neutral-900 rounded-md px-3 py-2.5
+        rounded-md px-3 py-2.5
       group"
         onMouseEnter={handleTwitterMouseEnter}
         onMouseLeave={handleTwitterMouseLeave}
       >
         <Twitter
           ref={twitterIconRef}
-          className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-12"
+          className="text-white text-xl transition-transform duration-300 hover:text-sky-500 ease-in-out group-hover:scale-110 group-hover:rotate-12"
           size={20}
         />
       </a>
       <a
-        href="https://github.com/yashksaini-coder"
+        href={user.github}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
      text-white transition duration-300 ease-in-out
-      hover:bg-neutral-900 rounded-md px-3 py-2.5
+       rounded-md px-3 py-2.5
      group  
    "
         onMouseEnter={handleGithubMouseEnter}
@@ -86,17 +86,17 @@ export default function SocialLinks() {
       >
         <Github
           ref={githubIconRef}
-          className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-6"
+          className="text-white text-xl transition-transform duration-300 hover:text-slate-500 ease-in-out group-hover:scale-110 group-hover:rotate-6"
           size={20}
         />
       </a>
       <a
-        href="https://www.linkedin.com/in/yashksaini/"
+        href={user.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
      text-white transition duration-300 ease-in-out
-      hover:bg-neutral-900 rounded-md px-3 py-2.5
+       rounded-md px-3 py-2.5
      group  
    "
         onMouseEnter={handleLinkedinMouseEnter}
@@ -104,17 +104,17 @@ export default function SocialLinks() {
       >
         <Linkedin
           ref={linkedinIconRef}
-          className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:-rotate-6"
+          className="text-white text-xl transition-transform duration-300 hover:text-blue-500 ease-in-out group-hover:scale-110 group-hover:-rotate-6"
           size={20}
         />
       </a>
       <a
-        href="mailto:yashksaini89@gmail.com"
+        href={`mailto:${user.email}`}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
      text-white transition duration-300 ease-in-out
-      hover:bg-neutral-900 rounded-md px-3 py-2.5
+       rounded-md px-3 py-2.5
      group  
    "
         onMouseEnter={handleMailMouseEnter}
@@ -122,7 +122,7 @@ export default function SocialLinks() {
       >
         <Mail
           ref={mailIconRef}
-          className="text-white text-xl transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:-rotate-12"
+          className="text-white text-xl transition-transform duration-300 hover:text-red-500 ease-in-out group-hover:scale-110 group-hover:-rotate-12"
           size={20}
         />
       </a>

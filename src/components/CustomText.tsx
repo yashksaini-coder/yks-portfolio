@@ -8,6 +8,7 @@ interface Props {
   size?: number;
   content?: string;
   color?: 'red' | 'blue' | 'violet' | 'purple' | 'sky' | 'green' | 'orange' | 'yellow' | 'pink' | 'gray' | 'slate' | 'zinc' | 'neutral' | 'stone' | 'amber' | 'lime';
+  contentSize?: 'sm' | 'md' | 'lg' | 'xl'; // Default size for content
 }
 
 export default function CustomText({ 
@@ -16,7 +17,8 @@ export default function CustomText({
   icon: Icon, 
   size = 6, 
   content, 
-  color = 'purple'
+  color = 'purple',
+  contentSize = 'sm', // Default size for content
 }: Props) {
   // Define color mappings for different states
   const colorClasses = {
@@ -108,7 +110,7 @@ export default function CustomText({
     <a
       href={href}
       target="_blank"
-      className={`${selectedColors.base} leading-none cursor-none transition-colors hover:underline ${selectedColors.hover} focus:outline-none focus:ring-2 ${selectedColors.focus} focus:ring-offset-2 inline-flex items-center gap-2 mr-1`}
+      className={`${selectedColors.base} leading-none cursor-pointer transition-colors hover:underline ${selectedColors.hover} focus:outline-none focus:ring-2 ${selectedColors.focus} focus:ring-offset-2 inline-flex items-center gap-2 mr-1`}
       rel="noopener noreferrer"
       title={typeof children === "string" ? children : undefined}
       aria-label={typeof children === "string" ? children : undefined}
@@ -116,7 +118,7 @@ export default function CustomText({
       {Icon && (
         <Icon className={`size-${size} text-current`} />
       )}
-      {content ? content : ""}
+      {content ? <span className={`text-${contentSize} text-${color}-500`}>{content}</span> : null}
       {children}
     </a>
   );

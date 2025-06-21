@@ -15,7 +15,7 @@ export default function Navbar() {
   // const router = useRouter();
 
   return (
-    <div className="w-full flex justify-center text-xl font-medium">
+    <div className="w-full flex justify-center text-xl font-medium text-slate-300">
       <nav className="mt-2 flex max-w-4xl w-full px-4 py-6 items-center justify-between">
         <Link href="/" className="group">
           <span className="text-purple-700 px-1 flex items-center gap-1">
