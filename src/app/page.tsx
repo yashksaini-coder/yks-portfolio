@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <div className="max-w-4xl mx-auto md:px-10 px4 py-6">
       <Preview />
-      <SocialLinks />
       <Separator />
     </div>
   );

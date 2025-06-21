@@ -4,6 +4,7 @@ import Description from "./common/description";
 import { Github } from "lucide-react";
 import CustomText from "./CustomText";
 import HindiText from "./custom/HindiText";
+import SocialLinks from "./social-links";
 export function Preview() {
   return (
     <div>
@@ -14,15 +15,8 @@ export function Preview() {
               Yash K. Saini
             </HyperText>
           </div>
-          <div className="flex flex-row items-center gap-2 md:gap-4 mt-2">
-            <HindiText
-              className="text-white md:text-2xl text-lg flex flex-row items-center gap-3 leading-none"
-              text={'उत्तराखंड,'}
-            />
-            <HindiText
-              className="bg-gradient-to-r from-orange-500 via-white to-green-600 bg-clip-text text-transparent md:text-2xl text-lg flex items-center gap-3 leading-none"
-              text={'भारत'}
-            />
+          <div className="flex flex-row items-center gap-2 md:gap-4">
+            <SocialLinks />
           </div>
         </div>
         <div className="flex flex-col items-center gap-2 md:gap-4 mt-2 h-[120px] w-[120px] md:h-[150px] md:w-[150px] bg-red-700 rounded-full">
