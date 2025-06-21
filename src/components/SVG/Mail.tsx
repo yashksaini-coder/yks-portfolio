@@ -6,12 +6,12 @@ import type { HTMLAttributes } from 'react';
 import { forwardRef, useCallback, useImperativeHandle, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
-export interface AtSignIconHandle {
+export interface MailHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
 }
 
-interface AtSignIconProps extends HTMLAttributes<HTMLDivElement> {
+interface MailProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
@@ -57,7 +57,7 @@ const pathVariants: Variants = {
   },
 };
 
-const Mail = forwardRef<AtSignIconHandle, AtSignIconProps>(
+const Mail = forwardRef<MailHandle, MailProps>(
   ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const isControlledRef = useRef(false);
