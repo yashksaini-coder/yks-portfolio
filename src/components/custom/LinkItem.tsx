@@ -1,5 +1,5 @@
 import type { LucideProps } from "lucide-react";
-
+import Link from "next/link";
 export function LinkItem({
   icon: Icon,
   size = 6, // Default size is 6, but it can be overridden if needed
@@ -22,14 +22,14 @@ export function LinkItem({
 
       <p className="text-balance">
         {href ? (
-          <a
+          <Link
             className="decoration-ring underline-offset-4 hover:underline"
             href={href}
             target="_blank"
             rel="noopener noreferrer"
           >
             {content}
-          </a>
+          </Link>
         ) : (
           content
         )}

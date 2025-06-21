@@ -1,6 +1,7 @@
 import { Preview } from "@/components/Preview";
 import { SocialLinks } from "@/components/social-links/index";
 import Separator from "@/components/common/Seperator";
+import { Mail } from "@/components/SVG/Mail";
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
       <Preview />
       <Separator />
       <SocialLinks />
+      <Separator />
+      <Mail />
     </div>
   );
 }
