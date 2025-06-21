@@ -1,7 +1,7 @@
 import React from "react";
 import { HyperText } from "@/components/magicui/hyper-text";
 import Description from "./common/description";
-import { Github, Loader } from "lucide-react";
+import { Github } from "lucide-react";
 import CustomText from "./CustomText";
 import HindiText from "./custom/HindiText";
 export function Preview() {

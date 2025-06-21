@@ -56,7 +56,7 @@ export default function SocialLinks() {
   return (
     <div className="flex flex-row gap-3">
       <a
-        href="https://www.x.com/icantcodefyi/"
+        href="https://www.x.com/yash_k_saini"
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
@@ -73,7 +73,7 @@ export default function SocialLinks() {
         />
       </a>
       <a
-        href="https://github.com/icantcodefyi"
+        href="https://github.com/yashksaini-coder"
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
@@ -91,7 +91,7 @@ export default function SocialLinks() {
         />
       </a>
       <a
-        href="https://www.linkedin.com/in/aniruddhdubge/"
+        href="https://www.linkedin.com/in/yashksaini/"
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
@@ -109,7 +109,7 @@ export default function SocialLinks() {
         />
       </a>
       <a
-        href="mailto:adubge@gmail.com"
+        href="mailto:yashksaini89@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-row items-center justify-start gap-2.5 
