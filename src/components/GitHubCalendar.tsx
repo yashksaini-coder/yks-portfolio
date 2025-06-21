@@ -14,7 +14,7 @@ function GithubCalender() {
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="text-3xl px-2 bg-blue-700 w-24 ">Metrics</h2>
+        <h2 className="text-3xl px-2 bg-blue-700 w-24 rounded-xl">Metrics</h2>
         <Description className="text-slate-300 text-2xl font-normal text-justify">
           All the work I have done so far in public &amp; people&apos;s
           appreciation

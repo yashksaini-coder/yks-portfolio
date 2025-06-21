@@ -1,15 +1,15 @@
-import {user} from "@/data/user";
+import { user } from "@/data/user";
 import Image from "next/image";
 import React from "react";
 import Description from "./common/description";
-import CustomText from "./CustomText";
-import { CircleDollarSign } from 'lucide-react';
 
 export function Contributions() {
   return (
     <div className="space-y-5">
-      <CustomText icon={CircleDollarSign} size={6} content="Winning Contributions" contentSize={'lg'} />
-      <div className="flex flex-col gap-4 text-stone-400">
+      <h2 className="text-3xl px-2 bg-cyan-700 w-50 inline rounded-xl  ">
+        Winning Contributions
+      </h2>
+      <div className="flex flex-col gap-4 text-stone-400 mb-4 mt-2">
         {user.contributions.map((contribution, index) => (
           <a
             key={index}

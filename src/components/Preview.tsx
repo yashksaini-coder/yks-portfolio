@@ -5,6 +5,7 @@ import { Github } from "lucide-react";
 import CustomText from "./CustomText";
 // import {LoopSentences} from "./custom/LoopSentence";
 import SocialLinks from "./social-links";
+import Image from "next/image";
 
 export function Preview() {
   return (
@@ -22,10 +23,12 @@ export function Preview() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-2 md:gap-4 md:h-[140px] md:w-[140px] rounded-full">
-          <img
+          <Image
             src="https://avatars.githubusercontent.com/u/115717039?v=4"
             alt="Yash K. Saini"
             className="rounded-full h-full w-full object-cover"
+            width={140}
+            height={140}
           />
         </div>
       </div>
@@ -33,7 +36,7 @@ export function Preview() {
         <Description className="text-slate-300 md:text-[23px] text-sm font-normal text-justify">
           Hi, I'm a self-taught developer who loves <CustomText icon={Github} href="https://github.com" content="Open Source" />. Passionate about coding, building applications, and learning low-level programming stuff too.{` `}
           I enjoy working with{" "} <CustomText href="https://www.python.org/" color="sky" content="Python" /> and <CustomText href="https://www.typescriptlang.org/" color="blue" content="TypeScript" />,
-          and currently learning {" "} <CustomText content="Rust" color="orange" />
+          and currently learning {" "} <CustomText content="Rust" color="orange"/>
           <br />
           I also document my learning journey on{" "}
           <CustomText href="https://www.youtube.com/@yashksaini" content="YouTube" color="red" /> and{" "}

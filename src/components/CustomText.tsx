@@ -8,7 +8,6 @@ interface Props {
   size?: number;
   content?: string;
   color?: 'red' | 'blue' | 'violet' | 'purple' | 'sky' | 'green' | 'orange' | 'yellow' | 'pink' | 'gray' | 'slate' | 'zinc' | 'neutral' | 'stone' | 'amber' | 'lime';
-  contentSize?: 'sm' | 'md' | 'lg' | 'xl'; // Default size for content
 }
 
 export default function CustomText({ 
@@ -17,8 +16,7 @@ export default function CustomText({
   icon: Icon, 
   size = 6, 
   content, 
-  color = 'purple',
-  contentSize = 'sm', // Default size for content
+  color = 'purple'
 }: Props) {
   // Define color mappings for different states
   const colorClasses = {
@@ -118,7 +116,7 @@ export default function CustomText({
       {Icon && (
         <Icon className={`size-${size} text-current`} />
       )}
-      {content ? <span className={`text-${contentSize} text-${color}-500`}>{content}</span> : null}
+      {content ? content : null}
       {children}
     </a>
   );
