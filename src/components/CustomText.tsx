@@ -114,7 +114,7 @@ export default function CustomText({
       aria-label={typeof children === "string" ? children : undefined}
     >
       {Icon && (
-        <Icon className={`size-${size} text-current`} />
+        <Icon className={`h-4 w-4 text-current`} />
       )}
       {content ? content : null}
       {children}
