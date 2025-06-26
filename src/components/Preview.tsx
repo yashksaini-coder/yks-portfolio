@@ -1,7 +1,7 @@
 import React from "react";
 import { HyperText } from "@/components/magicui/hyper-text";
 import Description from "./common/description";
-import { Github } from "lucide-react";
+// import { Github } from "lucide-react";
 import CustomText from "./CustomText";
 // import {LoopSentences} from "./custom/LoopSentence";
 import SocialLinks from "./social-links";
@@ -13,7 +13,7 @@ export function Preview() {
       <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-6 md:gap-4">
         <div className="flex flex-col items-start flex-1 min-w-0">
           <div className="h-12 md:h-16 flex flex-row items-center w-full">
-            <HyperText className="md:text-4xl text-3xl font-bold leading-none text-pur  ple-700 whitespace-nowrap">
+            <HyperText className="md:text-4xl text-3xl font-bold leading-none text-violet-700 whitespace-nowrap">
               Yash K. Saini
             </HyperText>
           </div>
@@ -34,7 +34,7 @@ export function Preview() {
       </div>
       <div className="my-4">
         <Description className="text-slate-300 md:text-[23px] text-sm font-normal text-justify">
-          Hi, I'm a self-taught developer who loves <CustomText icon={Github} href="https://github.com" content="Open Source" />. Passionate about coding, building applications, and learning low-level programming stuff too.{` `}
+          Hi, I'm a self-taught developer who loves <CustomText href="https://github.com/yashksaini-coder" content="Open Source"/>. Passionate about coding, building applications, and learning low-level programming stuff too.{` `}
           I enjoy working with{" "} <CustomText href="https://www.python.org/" color="sky" content="Python" /> and <CustomText href="https://www.typescriptlang.org/" color="blue" content="TypeScript" />,
           and currently learning {" "} <CustomText content="Rust" color="orange"/>
           <br />

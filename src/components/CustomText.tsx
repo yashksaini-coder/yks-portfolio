@@ -36,8 +36,8 @@ export default function CustomText({
       focus: 'focus:ring-violet-500'
     },
     purple: {
-      base: 'text-purple-100/30',
-      hover: 'hover:text-purple-600 hover:border-purple-600',
+      base: 'text-violet-100/30',
+      hover: 'hover:text-violet-600 hover:border-purple-600',
       focus: 'focus:ring-purple-500'
     },
     sky: {
@@ -114,7 +114,7 @@ export default function CustomText({
       aria-label={typeof children === "string" ? children : undefined}
     >
       {Icon && (
-        <Icon className={`h-4 w-4 text-current`} />
+        <Icon className={`size-${size} text-current`} />
       )}
       {content ? content : null}
       {children}

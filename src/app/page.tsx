@@ -16,7 +16,7 @@ export default function Home() {
        />
        <GithubCalender />
        <Separator
-        className="data-[orientation=horizontal]:h-1 mb-4 data-[orientation=vertical]:w-10"
+        className="data-[orientation=horizontal]:h-1 mb-4 px-8 data-[orientation=vertical]:w-10"
         decorative={true}
        />
        <Contributions />

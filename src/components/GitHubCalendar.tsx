@@ -12,15 +12,12 @@ function GithubCalender() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 py-8">
       <div>
-        <h2 className="text-3xl px-2 bg-blue-700 w-24 rounded-xl">Metrics</h2>
-        <Description className="text-slate-300 text-2xl font-normal text-justify">
-          All the work I have done so far in public &amp; people&apos;s
-          appreciation
-        </Description>
+        <h2 className="text-3xl px-2 bg-violet-700 text-white">Metrics</h2>
+        
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center text-white">
         <GitHubCalendar
           colorScheme="dark"
           fontSize={24}
