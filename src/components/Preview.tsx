@@ -33,13 +33,13 @@ export function Preview() {
         </div>
       </div>
       <div className="my-4">
-        <Description className="text-slate-300 md:text-[17px] text-sm font-normal text-justify">
-          Hi, I'm a self-taught developer who loves <CustomText href="https://github.com/yashksaini-coder" content="Open Source" color="violet"/>. Passionate about coding, building applications, and learning low-level programming stuff too.{` `}
+        <Description className="text-slate-300 md:text-[23px] text-sm font-normal text-justify">
+          Hi, I'm a full-stack developer who loves <CustomText href="https://github.com/yashksaini-coder" content="Open Source" color="violet"/>. Turns ideas, and ships them into working applications, and learning low-level programming stuff too.{` `}
           I enjoy working with{" "} <CustomText href="https://www.python.org/" color="sky" content="Python" /> and <CustomText href="https://www.typescriptlang.org/" color="blue" content="TypeScript" />,
-          and currently learning {" "} <CustomText content="Rust" color="orange"/>
-          <br />
-          I also document my learning journey on{" "}
-          <CustomText href="https://www.youtube.com/@yashksaini" content="YouTube" color="red" /> and{" "}
+          and currently learning {" "} <CustomText content="Rust" color="orange"/>{", "}
+          I also document my learning and work on{" "}
+          <CustomText href="https://www.youtube.com/@yashksaini" content="YouTube" color="red" /> & {" "}
+          <CustomText href="https://dev.to/yashksaini" content="Dev.to" color="purple" />
         </Description>
       </div>
     </div>

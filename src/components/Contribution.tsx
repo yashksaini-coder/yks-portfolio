@@ -6,7 +6,7 @@ import Description from "./common/description";
 export function Contributions() {
   return (
     <div className="space-y-5 py-8">
-      <h2 className="text-3xl px-2 bg-cyan-700 w-50 inline rounded-xl  ">
+      <h2 className="text-3xl px-2 bg-cyan-700 w-50 inline rounded-xl text-white">
         Winning Contributions
       </h2>
       <div className="flex flex-col gap-4 text-stone-400 mb-4 mt-2">

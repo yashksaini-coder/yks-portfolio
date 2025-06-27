@@ -8,14 +8,35 @@ import { ScrollTop } from "@/components/custom/scroll-top";
 
 const WDLXLLubrifontTCRegular = localFont({
   src: '../../public/fonts/WDXLLubrifontTC-Regular.ttf',
-  weight: '400',
-  style: 'normal',
+  weight: '200',
+  style: 'bold',
 })
 
 
 export const metadata: Metadata = {
   title: "Yash K. Saini",
-  description: "Yash K. Saini's Portfolio",
+  description: "Building Open Source Projects, Learning Rust, and Sharing Knowledge",
+  openGraph: {
+    title: "Yash K. Saini",
+    description: "Full-Stack Developer | Building Cool Stuff",
+    url: "https://yashksaini.systems",
+    siteName: "Yash K. Saini",
+    images: [
+      {
+        url: "https://yashksaini.systems/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Yash K. Saini - Full-Stack Developer",
+      },
+    ],
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yash K. Saini",
+    description: "Full-Stack Developer | Building Cool Stuff",
+    images: ["https://yashksaini.systems/og-image.png"],
+  },
 };
 
 export default function RootLayout({
