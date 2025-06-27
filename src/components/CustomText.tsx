@@ -2,9 +2,9 @@ import React from "react";
 import type { LucideProps } from "lucide-react";
 
 interface Props {
-  href?: string; // Made optional since it's now conditional
+  href?: string;
   children?: React.ReactNode;
-  icon?: React.ComponentType<LucideProps>; //TODO: Update from Lucide to actual SVG react component prop
+  icon?: React.ComponentType<LucideProps>;
   size?: number;
   content?: string;
   color?: 'red' | 'blue' | 'violet' | 'purple' | 'sky' | 'green' | 'orange' | 'yellow' | 'pink' | 'gray' | 'slate' | 'zinc' | 'neutral' | 'stone' | 'amber' | 'lime';
@@ -18,105 +18,41 @@ export default function CustomText({
   content, 
   color = 'purple'
 }: Props) {
-  // Define color mappings for different states
+  // Define color mappings with proper hover states
   const colorClasses = {
-    red: {
-      base: 'text-red-100/30',
-      hover: 'hover:text-red-600 hover:border-red-600',
-      focus: 'focus:ring-red-500'
-    },
-    blue: {
-      base: 'text-blue-100/30',
-      hover: 'hover:text-blue-600 hover:border-blue-600',
-      focus: 'focus:ring-blue-500'
-    },
-    violet: {
-      base: 'text-violet-100/30',
-      hover: 'hover:text-violet-600 hover:border-violet-600',
-      focus: 'focus:ring-violet-500'
-    },
-    purple: {
-      base: 'text-violet-100/30',
-      hover: 'hover:text-violet-600 hover:border-purple-600',
-      focus: 'focus:ring-purple-500'
-    },
-    sky: {
-      base: 'text-sky-100/30',
-      hover: 'hover:text-sky-600 hover:border-sky-600',
-      focus: 'focus:ring-sky-500'
-    },
-    green: {
-      base: 'text-green-100/30',
-      hover: 'hover:text-green-600 hover:border-green-600',
-      focus: 'focus:ring-green-500'
-    },
-    orange: {
-      base: 'text-orange-100/30',
-      hover: 'hover:text-orange-600 hover:border-orange-600',
-      focus: 'focus:ring-orange-500'
-    },
-    yellow: {
-      base: 'text-yellow-100/30',
-      hover: 'hover:text-yellow-600 hover:border-yellow-600',
-      focus: 'focus:ring-yellow-500'
-    },
-    pink: {
-      base: 'text-pink-100/30',
-      hover: 'hover:text-pink-600 hover:border-pink-600',
-      focus: 'focus:ring-pink-500'
-    },
-    gray: {
-      base: 'text-gray-100/30',
-      hover: 'hover:text-gray-600 hover:border-gray-600',
-      focus: 'focus:ring-gray-500'
-    },
-    slate: {
-      base: 'text-slate-100/30',
-      hover: 'hover:text-slate-600 hover:border-slate-600',
-      focus: 'focus:ring-slate-500'
-    },
-    zinc: {
-      base: 'text-zinc-100/30',
-      hover: 'hover:text-zinc-600 hover:border-zinc-600',
-      focus: 'focus:ring-zinc-500'
-    },
-    neutral: {
-      base: 'text-neutral-100/30',
-      hover: 'hover:text-neutral-600 hover:border-neutral-600',
-      focus: 'focus:ring-neutral-500'
-    },
-    stone: {
-      base: 'text-stone-100/30',
-      hover: 'hover:text-stone-600 hover:border-stone-600',
-      focus: 'focus:ring-stone-500'
-    },
-    amber: {
-      base: 'text-amber-100/30',
-      hover: 'hover:text-amber-600 hover:border-amber-600',
-      focus: 'focus:ring-amber-500'
-    },
-    lime: {
-      base: 'text-lime-100/30',
-      hover: 'hover:text-lime-600 hover:border-lime-600',
-      focus: 'focus:ring-lime-500'
-    },
+    red: 'text-red-500 hover:bg-red-500 hover:text-slate-100 focus:ring-red-500',
+    blue: 'text-blue-500 hover:bg-blue-500 hover:text-slate-100 focus:ring-blue-500',
+    violet: 'text-violet-500 hover:bg-violet-500 hover:text-slate-100 focus:ring-violet-500',
+    purple: 'text-purple-500 hover:bg-purple-500 hover:text-slate-100 focus:ring-purple-500',
+    sky: 'text-sky-500 hover:bg-sky-500 hover:text-slate-100 focus:ring-sky-500',
+    green: 'text-green-500 hover:bg-green-500 hover:text-slate-100 focus:ring-green-500',
+    orange: 'text-orange-500 hover:bg-orange-500 hover:text-slate-100 focus:ring-orange-500',
+    yellow: 'text-yellow-500 hover:bg-yellow-500 hover:text-slate-100 focus:ring-yellow-500',
+    pink: 'text-pink-500 hover:bg-pink-500 hover:text-slate-100 focus:ring-pink-500',
+    gray: 'text-gray-500 hover:bg-gray-500 hover:text-slate-100 focus:ring-gray-500',
+    slate: 'text-slate-500 hover:bg-slate-500 hover:text-slate-100 focus:ring-slate-500',
+    zinc: 'text-zinc-500 hover:bg-zinc-500 hover:text-slate-100 focus:ring-zinc-500',
+    neutral: 'text-neutral-500 hover:bg-neutral-500 hover:text-slate-100 focus:ring-neutral-500',
+    stone: 'text-stone-500 hover:bg-stone-500 hover:text-slate-100 focus:ring-stone-500',
+    amber: 'text-amber-500 hover:bg-amber-500 hover:text-slate-100 focus:ring-amber-500',
+    lime: 'text-lime-500 hover:bg-lime-500 hover:text-slate-100 focus:ring-lime-500',
   };
 
-  const selectedColors = colorClasses[color];
+  const baseClasses = "leading-none cursor-pointer underline inline-flex items-center gap-2 mr-1 px-2 py-1 rounded transition-all duration-200 ease-in-out hover:underline-offset-2 focus:underline-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2";
 
   return (
     <a
       href={href}
       target="_blank"
-      className={`${selectedColors.base} leading-none cursor-pointer transition-colors hover:underline ${selectedColors.hover} focus:outline-none focus:ring-2 ${selectedColors.focus} focus:ring-offset-2 inline-flex items-center gap-2 mr-1`}
+      className={`${baseClasses} ${colorClasses[color]}`}
       rel="noopener noreferrer"
       title={typeof children === "string" ? children : undefined}
       aria-label={typeof children === "string" ? children : undefined}
     >
       {Icon && (
-        <Icon className={`size-${size} text-current`} />
+        <Icon className={`w-${size} h-${size}`} />
       )}
-      {content ? content : null}
+      {content}
       {children}
     </a>
   );
