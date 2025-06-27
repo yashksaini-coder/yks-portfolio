@@ -16,12 +16,12 @@ export default function Navbar() {
 
   return (
     <div className="w-full flex justify-center text-xl font-medium text-slate-300">
-      <nav className="mt-2 flex max-w-4xl w-full px-4 py-6 items-center justify-between">
+      <nav className="mt-2 flex max-w-4xl w-full py-6 items-center justify-between">
         <Link href="/" className="group">
-          <span className="text-violet-700 px-1 flex items-center gap-1">
+          <span className="text-violet-700 flex items-center gap-1">
             <ChevronRight className="h-6 w-6" />
             <span>YkS</span>
-            <span className="ml-1 h-4.5 w-2 animate-blink bg-violet-800 inline-block" />
+            <span className="ml-1 h-4.5 w-2 animate-blink bg-violet-500 inline-block" />
           </span>
         </Link>
         <style jsx>{`
