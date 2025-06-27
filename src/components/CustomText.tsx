@@ -38,7 +38,7 @@ export default function CustomText({
     lime: 'text-lime-500 hover:bg-lime-500 hover:text-slate-100 focus:ring-lime-500',
   };
 
-  const baseClasses = "leading-none cursor-pointer underline inline-flex items-center gap-2 mr-1 px-2 py-1 rounded transition-all duration-200 ease-in-out hover:underline-offset-2 focus:underline-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2";
+  const baseClasses = "leading-none cursor-pointer underline inline-flex items-center rounded-xl gap-2 px-1 py-1 transition-all duration-200 ease-in-out hover:underline-offset-2 focus:underline-offset-2 focus:outline-none focus:ring-2 focus:ring-offset-2";
 
   return (
     <a
