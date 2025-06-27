@@ -5,7 +5,7 @@ import Description from "./common/description";
 
 export function Contributions() {
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 py-8">
       <h2 className="text-3xl px-2 bg-cyan-700 w-50 inline rounded-xl  ">
         Winning Contributions
       </h2>

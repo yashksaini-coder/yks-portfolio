@@ -13,15 +13,17 @@ function GithubCalender() {
 
   return (
     <div className="space-y-4 py-8">
-      <div>
-        <h2 className="text-3xl px-2 bg-violet-700 text-white">Metrics</h2>
+      <div className="flex flex-col items-start">
+        <h2 className="text-3xl px-3 bg-violet-700 text-white">Metrics</h2>
         
       </div>
-      <div className="flex justify-center text-white">
+      <div className="flex justify-center text-white selection:text-violet-700 selection:bg-violet-200">
         <GitHubCalendar
           colorScheme="dark"
-          fontSize={24}
+          fontSize={20}
           blockSize={11}
+          hideColorLegend={true}
+          hideMonthLabels={true}
           theme={{
             dark: themes.purple,
           }}
